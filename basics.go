@@ -33,4 +33,15 @@ func main() {
 	if v := 2; v < 6 {
 		fmt.Println("Yoshi")
 	}
+
+	// More Types: structs, slice, map
+	type DataType struct {
+		X int
+		Y int
+	}
+
+	fmt.Println(DataType{1, 2})
+	v := DataType{3, 45}
+	v.X = 4
+	fmt.Println(v.X, v.Y)
 }
