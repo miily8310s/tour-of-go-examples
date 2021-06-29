@@ -18,4 +18,7 @@ func main() {
 	fmt.Println(math.Pi)
 	fmt.Println(add(33, 11))
 	fmt.Println(swap("hello", "house"))
+	var a, b = swap("hello", "world")
+	c, d := swap("hello", "world")
+	fmt.Println(a, b, c, d)
 }
