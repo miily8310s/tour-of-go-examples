@@ -44,4 +44,28 @@ func main() {
 	v := DataType{3, 45}
 	v.X = 4
 	fmt.Println(v.X, v.Y)
+
+	var hollow [2]string
+	hollow[0] = "Hollow"
+	hollow[1] = "Knight"
+	fmt.Println(hollow[0], hollow[1])
+	fmt.Println(hollow)
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+	fmt.Println(primes[2:4])
+	nums := []int{1, 2, 3}
+	fmt.Println(append(nums, 4, 5))
+
+	commits := map[string]int{
+    "rsc": 3711,
+    "r":   2138,
+    "gri": 1908,
+    "adg": 912,
+  }
+	commits["gri"] = 222
+	fmt.Println(commits)
+
+	hypot := func(x, y float64) float64 {
+		return math.Sqrt(x*x + y*y)
+	}
+	fmt.Println(hypot(5, 12))
 }
